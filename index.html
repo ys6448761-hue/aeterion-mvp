@@ -202,6 +202,22 @@
             margin: 0 5px;
         }
         
+        .free-beta-notice {
+            background: linear-gradient(135deg, #FF6B6B, #FFE66D);
+            color: #333;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: bold;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes glow {
+            from { box-shadow: 0 0 10px rgba(255, 107, 107, 0.5); }
+            to { box-shadow: 0 0 20px rgba(255, 107, 107, 0.8); }
+        }
+        
         @keyframes pulse {
             0% { transform: scale(1); }
             50% { transform: scale(1.05); }
@@ -256,12 +272,19 @@
             </div>
             
             <div class="form-group">
-                <label>원하시는 서비스를 선택해주세요 *</label>
+                <label>체험하고 싶은 서비스를 선택해주세요 *</label>
+                <div class="free-beta-notice">
+                    <span class="emoji">✨</span>
+                    <strong>선착순 10명 무료 체험!</strong>
+                    <span class="emoji">✨</span>
+                    <br>
+                    <small>정식 오픈 전 특별 혜택 - 완전 무료로 체험해보세요</small>
+                </div>
                 <div class="packages">
                     <div class="package" data-package="basic">
                         <div class="package-header">
                             <div class="package-name">🎨 미라클북 (소원그림 + 스토리북)</div>
-                            <div class="package-price">19,900원</div>
+                            <div class="package-price">무료 체험</div>
                         </div>
                         <div class="package-description">
                             • 개인 맞춤 소원그림 1개<br>
@@ -274,7 +297,7 @@
                     <div class="package" data-package="premium">
                         <div class="package-header">
                             <div class="package-name">🎭 미라클툰 (스토리북 + 웹툰)</div>
-                            <div class="package-price">39,900원</div>
+                            <div class="package-price">무료 체험</div>
                         </div>
                         <div class="package-description">
                             • 미라클북 전체 포함<br>
@@ -287,7 +310,7 @@
                     <div class="package pulse" data-package="ultimate">
                         <div class="package-header">
                             <div class="package-name">🎬 미라클필름 (풀패키지)</div>
-                            <div class="package-price">79,900원</div>
+                            <div class="package-price">무료 체험</div>
                         </div>
                         <div class="package-description">
                             • 미라클북 + 미라클툰 모두 포함<br>
@@ -301,7 +324,7 @@
             </div>
             
             <button type="submit" class="submit-btn" id="submitBtn">
-                <span class="emoji">✨</span> 나만의 기적 주문하기 <span class="emoji">✨</span>
+                <span class="emoji">✨</span> 무료 체험 신청하기 <span class="emoji">✨</span>
             </button>
         </form>
         
